@@ -22,12 +22,13 @@ img{
     background: #fff;
     width: 100%;
     
+    
 }
 
 .js .header{
     position: fixed;
     width: 100%;
-    
+    z-index: 10;
 }
 
 .logo-text{
@@ -80,8 +81,61 @@ img{
 }
 
 .header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
 
 }
+
+.js .header__nav{
+    transition: max-height 1s;
+}
+
+.js .laptop-slider{
+    overflow: hidden;
+}
+
+.js .laptop-slider .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+
+}
+
+.js .laptop-slider figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.js .laptop-slider figure .show{
+    opacity: 1;
+    position: static;
+}
+
+
+.js .laptop-slider .prev, .js .laptop-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.js .laptop-slider .prev{
+    left: 10px;
+}
+
+.js .laptop-slider .next{
+    right: 10px;
+}
+
+
 
 .hero{
     height: 70vh;
