@@ -19,7 +19,7 @@
         btnNext: '.next'
     })
     var carouselQuotes = new Carousel({
-        container: '.laptop-slider .slideshow',
+        container: '.quote-slideshow',
         itens: 'figure',
         btnPrev: '.prev',
         btnNext: '.next'
